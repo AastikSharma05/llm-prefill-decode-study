@@ -1,0 +1,5 @@
+# Client-side scripts and plots (laptop or GPU machine)
+aiohttp>=3.9
+pandas>=2.0
+matplotlib>=3.8
+# On the GPU machine only:  pip install vllm
