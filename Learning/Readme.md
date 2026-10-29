@@ -1,0 +1,1 @@
+Practice scripts I wrote while learning, tested only against the mock server.
