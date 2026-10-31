@@ -1,0 +1,44 @@
+{
+  "label": "chunk512_kvremote_r3",
+  "mode": "kvremote",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "chat_users": 8,
+  "chat_input": 256,
+  "chat_output": 256,
+  "sum_input": 8192,
+  "sum_output": 64,
+  "sum_interval_s": 2.08,
+  "duration_s": 120,
+  "chat_itl": {
+    "p50_ms": 12.69,
+    "p90_ms": 14.31,
+    "p99_ms": 32.38,
+    "p99_9_ms": 37.35,
+    "max_ms": 46.97,
+    "count": 61192
+  },
+  "chat_ttft": {
+    "p50_ms": 56.11,
+    "p90_ms": 66.08,
+    "p99_ms": 90.52,
+    "p99_9_ms": 92.51,
+    "max_ms": 92.61,
+    "count": 239
+  },
+  "stall_threshold_ms": 24.84,
+  "stall_threshold_source": "2 x median gap of chunk512_off_r3",
+  "stalls_per_user_minute": 104.0,
+  "stall_seconds_per_user_minute": 3.231,
+  "summarization_ttft": {
+    "p50_ms": 51.48,
+    "p90_ms": 61.55,
+    "p99_ms": 69.45,
+    "p99_9_ms": 70.1,
+    "max_ms": 70.17,
+    "count": 57
+  },
+  "summarization_offered": 57,
+  "summarization_completed": 57,
+  "possible_overload": false,
+  "chat_multi_token_chunks": 0
+}

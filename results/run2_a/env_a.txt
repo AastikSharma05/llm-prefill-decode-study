@@ -1,0 +1,8 @@
+date: 2026-10-31T10:44:07Z
+model: Qwen/Qwen2.5-7B-Instruct  dtype: bfloat16  mock: 0
+name, driver_version, memory.total [MiB], clocks.max.sm [MHz], power.limit [W]
+NVIDIA A100-PCIE-40GB, 580.126.20, 40960 MiB, 1410 MHz, 250.00 W
+python: 3.10.20
+vllm: 0.31.0
+torch: 2.13.0+cu130 (CUDA 13.0)
+transformers: 5.17.0

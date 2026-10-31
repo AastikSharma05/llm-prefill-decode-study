@@ -1,0 +1,44 @@
+{
+  "label": "chunk8192_colocated_r3",
+  "mode": "colocated",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "chat_users": 8,
+  "chat_input": 256,
+  "chat_output": 256,
+  "sum_input": 8192,
+  "sum_output": 64,
+  "sum_interval_s": 2.08,
+  "duration_s": 120,
+  "chat_itl": {
+    "p50_ms": 13.22,
+    "p90_ms": 14.61,
+    "p99_ms": 49.7,
+    "p99_9_ms": 651.16,
+    "max_ms": 652.24,
+    "count": 42304
+  },
+  "chat_ttft": {
+    "p50_ms": 60.05,
+    "p90_ms": 535.7,
+    "p99_ms": 701.95,
+    "p99_9_ms": 716.72,
+    "max_ms": 719.55,
+    "count": 166
+  },
+  "stall_threshold_ms": 24.86,
+  "stall_threshold_source": "2 x median gap of chunk8192_off_r3",
+  "stalls_per_user_minute": 105.69,
+  "stall_seconds_per_user_minute": 19.306,
+  "summarization_ttft": {
+    "p50_ms": 702.59,
+    "p90_ms": 711.52,
+    "p99_ms": 721.83,
+    "p99_9_ms": 722.99,
+    "max_ms": 723.12,
+    "count": 57
+  },
+  "summarization_offered": 57,
+  "summarization_completed": 57,
+  "possible_overload": false,
+  "chat_multi_token_chunks": 0
+}

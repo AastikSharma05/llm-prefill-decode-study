@@ -1,0 +1,44 @@
+{
+  "label": "chunk8192_off_r3",
+  "mode": "off",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "chat_users": 8,
+  "chat_input": 256,
+  "chat_output": 256,
+  "sum_input": 8192,
+  "sum_output": 64,
+  "sum_interval_s": 2.08,
+  "duration_s": 120,
+  "chat_itl": {
+    "p50_ms": 12.43,
+    "p90_ms": 12.88,
+    "p99_ms": 28.53,
+    "p99_9_ms": 31.21,
+    "max_ms": 43.68,
+    "count": 63519
+  },
+  "chat_ttft": {
+    "p50_ms": 52.29,
+    "p90_ms": 57.71,
+    "p99_ms": 74.11,
+    "p99_9_ms": 75.82,
+    "max_ms": 75.95,
+    "count": 253
+  },
+  "stall_threshold_ms": 24.85,
+  "stall_threshold_source": "2 x this run's median gap",
+  "stalls_per_user_minute": 90.0,
+  "stall_seconds_per_user_minute": 2.578,
+  "summarization_ttft": {
+    "p50_ms": null,
+    "p90_ms": null,
+    "p99_ms": null,
+    "p99_9_ms": null,
+    "max_ms": null,
+    "count": 0
+  },
+  "summarization_offered": 0,
+  "summarization_completed": 0,
+  "possible_overload": false,
+  "chat_multi_token_chunks": 0
+}
