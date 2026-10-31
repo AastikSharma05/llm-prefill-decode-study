@@ -5,7 +5,7 @@
 ok: every setting's TTFT repeats agree within 10%
 TTFT grows 19.3x from 1k to 16k input tokens (input grew 16x)
 GPU while busy (gpu_log_a.csv): SM clock median 1350 MHz, 5th pct 1065 MHz, max temperature 72 C
-?? the clock dropped by more than 15% at times. The L4 is a 72 W card and lowers its clock when it hits its power limit, so some drop is normal; compare the two Exp A runs before trusting a trend.
+?? the clock dropped by more than 15% at times. GPUs lower their clock when they reach their power limit, so some drop is normal; compare the two Exp A runs before trusting a trend.
 
 Numbers for Figure 1 (prefill vs decode):
   median TTFT / decode time (ms):

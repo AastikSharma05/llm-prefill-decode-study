@@ -104,8 +104,8 @@ def check_gpu_log(path):
     say(f"GPU while busy ({os.path.basename(path)}): SM clock median {med(clocks):.0f} MHz, "
         f"5th pct {p5:.0f} MHz, max temperature {max(temps) if temps else float('nan'):.0f} C")
     if p5 < 0.85 * med(clocks):
-        say("?? the clock dropped by more than 15% at times. The L4 is a 72 W card and lowers its clock "
-            "when it hits its power limit, so some drop is normal; compare the two Exp A runs before trusting a trend.")
+        say("?? the clock dropped by more than 15% at times. GPUs lower their clock when they reach their "
+            "power limit, so some drop is normal; compare the two Exp A runs before trusting a trend.")
 
 
 # ---------------------------------------------------------------- Experiment A
@@ -319,8 +319,8 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--results", default="results")
     p.add_argument("--compare-a", default=None, help="an earlier exp_a.csv to compare with results/exp_a.csv")
-    p.add_argument("--peak-tflops", type=float, default=None, help="dense bf16 peak; default from env_a.txt (L4: 121)")
-    p.add_argument("--mem-bw-gbs", type=float, default=None, help="memory bandwidth GB/s; default from env_a.txt (L4: 300)")
+    p.add_argument("--peak-tflops", type=float, default=None, help="dense bf16 peak; default from env_a.txt (A100: 312)")
+    p.add_argument("--mem-bw-gbs", type=float, default=None, help="memory bandwidth GB/s; default from env_a.txt (A100: 1555)")
     args = p.parse_args()
 
     mock = any("MOCK" in open(f).read() for f in
